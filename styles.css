@@ -43,7 +43,7 @@ body{
 }
 
 .logo {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     text-align: center;
     font-size: 4rem;
     position: relative;
@@ -72,6 +72,7 @@ main {
 form {
     background-color: white;
     padding: 12px 36px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1) 
 }
 
 h3 {
@@ -107,4 +108,22 @@ label {
 
 section.hero p {
     margin-bottom: 32px;
+}
+
+input {
+    width: 250px;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 36px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px 0px lightgray;
+
+    margin-bottom: 24px;
 }
