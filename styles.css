@@ -1,9 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
     --main-bg-clr: #EEEEEE;
     --sidebar-bg-clr: lightgray;
+    --padding-hrz: 36px;
 }
 
 .dm-serif-text-regular {
@@ -21,20 +23,88 @@
 body{
     display: flex;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     background-color: var(--sidebar-bg-clr);
     width: min(400px, 33%);
+    padding: 12px 0px;
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sidebar a {
+    color: lightcoral;
 }
 
 .logo {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.7);
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
+    position: relative;
+    top: -66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    color: white;
+}
+
+.credit {
+    color: white;
+    text-align: center;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
     background-color: var(--main-bg-clr);
+    gap: 36px;
+}
+
+form {
+    background-color: white;
+    padding: 12px 36px;
+}
+
+h3 {
+    margin-top: 12px;
+    font-size: 1.6rem;
+}
+
+.hero {
+    font-size: 1.6rem;
+    max-width: 800px;
+    padding-left: var(--padding-hrz);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    gap: 32px;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;;
+}
+
+.submit {
+    padding-left: var(--padding-hrz);
+}
+
+section.hero p {
+    margin-bottom: 32px;
 }
