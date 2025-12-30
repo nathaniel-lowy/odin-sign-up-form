@@ -31,7 +31,7 @@ body{
     flex-direction: column;
     justify-content: end;
     background-color: var(--sidebar-bg-clr);
-    width: min(400px, 33%);
+    width: min(800px, 40%);
     padding: 12px 0px;
     background-image: url("./images/bg.jpg");
     background-size: cover;
@@ -82,8 +82,10 @@ h3 {
 
 .hero {
     font-size: 1.6rem;
-    max-width: 800px;
+    max-width: 1200px;
     padding-left: var(--padding-hrz);
+    padding-right: 64px;
+    font-weight: bold;
 }
 
 .form-row {
@@ -114,6 +116,19 @@ input {
     width: 250px;
     height: 2rem;
     font-size: 1rem;
+    border: 1px #E5E7EB solid;
+}
+
+input:focus {
+    outline: none;
+    border: 1px blue solid;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 0px lightgray;
+}
+
+input:user-invalid {
+    outline: none;
+    border: 1px red solid;
 }
 
 button {
@@ -124,6 +139,14 @@ button {
     color: white;
     border-radius: 12px;
     box-shadow: 2px 2px 4px 0px lightgray;
-
     margin-bottom: 24px;
+}
+
+button:focus {
+    outline: none;
+    outline: 2px black solid;
+}
+
+form:invalid ~ section button{
+    background-color: gray;
 }
