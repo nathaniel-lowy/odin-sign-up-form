@@ -30,31 +30,31 @@
             <div class="form-row">
                 <div class="field">
                     <label for="first">FIRST NAME</label>
-                    <input type="text" id="first">
+                    <input type="text" id="first" placeholder="Joe">
                 </div>
                 <div class="field">
                     <label for="last">LAST NAME</label>
-                    <input type="text" id="last">
+                    <input type="text" id="last" placeholder="Smith">
                 </div>
             </div>
             <div class="form-row">
                 <div class="field">
                     <label for="email">EMAIL (*)</label>
-                    <input type="email" id="email" required pattern="^(([a-zA-Z0-9_]+)@([a-zA-Z0-9_]+)(\.)([a-zA-Z0-9_])+)$">
+                    <input type="email" id="email" placeholder="example@xyz.com" pattern="^(([a-zA-Z0-9_]+)@([a-zA-Z0-9_]+)(\.)([a-zA-Z0-9_])+)$">
                 </div>
                 <div class="field">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" pattern="^([0-9-]+)$">
+                    <input type="tel" id="phone" placeholder="123-456-7890" pattern="^([0-9-]+)$">
                 </div>
             </div>
             <div class="form-row">
                 <div class="field">
                     <label for="pass">PASSWORD (*)</label>
-                    <input type="password" id="pass" required pattern="^(([a-zA-Z0-9])*)$">
+                    <input type="password" placeholder="Abc123" id="pass" required pattern="^(([a-zA-Z0-9])*)$">
                 </div>
                 <div class="field">
                     <label for="pass-confirm">CONFIRM PASSWORD (*)</label>
-                    <input type="password" id="pass-confirm" required pattern="^(([a-zA-Z0-9])*)$">
+                    <input type="password" placeholder="Abc123" id="pass-confirm" required pattern="^(([a-zA-Z0-9])*)$">
                 </div>
             </div>
         </form>

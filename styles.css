@@ -150,3 +150,14 @@ button:focus {
 form:invalid ~ section button{
     background-color: gray;
 }
+
+.submit a:link {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: lightgray;
+    font-size: 0.8rem
+}
